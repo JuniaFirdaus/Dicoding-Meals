@@ -17,15 +17,12 @@
 		0B053D5D257778C10089250D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B053D5C257778C10089250D /* SearchView.swift */; };
 		0B053D5F257778D80089250D /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B053D5E257778D80089250D /* SearchRow.swift */; };
 		0B053D61257778F20089250D /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B053D60257778F20089250D /* SearchRouter.swift */; };
-		0B137F5F25505F070007C49F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0B137F5E25505F070007C49F /* Alamofire */; };
-		0B137F62255061A20007C49F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0B137F61255061A20007C49F /* Realm */; };
-		0B137F64255061A20007C49F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B137F63255061A20007C49F /* RealmSwift */; };
 		0B137F6D2550681D0007C49F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B137F6C2550681D0007C49F /* RxSwift */; };
 		0B137F6F2550681D0007C49F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0B137F6E2550681D0007C49F /* RxCocoa */; };
-		0B3104AE25789A9B00AA5BC4 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 0B3104AD25789A9B00AA5BC4 /* Core */; };
 		0B3104B025789AA100AA5BC4 /* Category in Frameworks */ = {isa = PBXBuildFile; productRef = 0B3104AF25789AA100AA5BC4 /* Category */; };
 		0B3F08DC255AED3F006E4173 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F08DB255AED3F006E4173 /* AboutView.swift */; };
 		0B3F08DE255AF053006E4173 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F08DD255AF053006E4173 /* CircleImage.swift */; };
+		0BAB02EE25D2C50400D1B1C0 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAB02ED25D2C50400D1B1C0 /* Core */; };
 		0BC9B960255040BA0068689A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC9B95F255040BA0068689A /* Preview Assets.xcassets */; };
 		0BC9B96E255041DA0068689A /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9B96D255041DA0068689A /* Injection.swift */; };
 		0BC9B97C255042D50068689A /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9B97B255042D50068689A /* APICall.swift */; };
@@ -70,7 +67,6 @@
 		0B3104AB2578968E00AA5BC4 /* Category */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Category; path = Modules/Category; sourceTree = "<group>"; };
 		0B3F08DB255AED3F006E4173 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0B3F08DD255AF053006E4173 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		0B5E58F1257868E100E9A29B /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Modules/Core; sourceTree = "<group>"; };
 		0B712BCF25B7D75300F8A124 /* Meal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Meal; path = Modules/Meal; sourceTree = "<group>"; };
 		0BC9B95F255040BA0068689A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BC9B96D255041DA0068689A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
@@ -109,13 +105,10 @@
 			files = (
 				0B137F6D2550681D0007C49F /* RxSwift in Frameworks */,
 				0BF452BF25BBDA7800CE5212 /* Meal in Frameworks */,
-				0B137F5F25505F070007C49F /* Alamofire in Frameworks */,
 				0BC9B9A6255048850068689A /* SDWebImageSwiftUI in Frameworks */,
 				0B137F6F2550681D0007C49F /* RxCocoa in Frameworks */,
-				0B137F62255061A20007C49F /* Realm in Frameworks */,
-				0B3104AE25789A9B00AA5BC4 /* Core in Frameworks */,
+				0BAB02EE25D2C50400D1B1C0 /* Core in Frameworks */,
 				0B3104B025789AA100AA5BC4 /* Category in Frameworks */,
-				0B137F64255061A20007C49F /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +316,6 @@
 				0BDD148825503D0E002714DD /* .swiftlint.yml */,
 				0B712BCF25B7D75300F8A124 /* Meal */,
 				0B3104AB2578968E00AA5BC4 /* Category */,
-				0B5E58F1257868E100E9A29B /* Core */,
 				0BDD147325503CBC002714DD /* Dicoding Meals */,
 				0BDD147225503CBC002714DD /* Products */,
 				0B3104AC25789A9B00AA5BC4 /* Frameworks */,
@@ -454,14 +446,11 @@
 			name = "Dicoding Meals";
 			packageProductDependencies = (
 				0BC9B9A5255048850068689A /* SDWebImageSwiftUI */,
-				0B137F5E25505F070007C49F /* Alamofire */,
-				0B137F61255061A20007C49F /* Realm */,
-				0B137F63255061A20007C49F /* RealmSwift */,
 				0B137F6C2550681D0007C49F /* RxSwift */,
 				0B137F6E2550681D0007C49F /* RxCocoa */,
-				0B3104AD25789A9B00AA5BC4 /* Core */,
 				0B3104AF25789AA100AA5BC4 /* Category */,
 				0BF452BE25BBDA7800CE5212 /* Meal */,
+				0BAB02ED25D2C50400D1B1C0 /* Core */,
 			);
 			productName = "Dicoding Meals";
 			productReference = 0BDD147125503CBC002714DD /* Dicoding Meals.app */;
@@ -493,9 +482,8 @@
 			mainGroup = 0BDD146825503CBC002714DD;
 			packageReferences = (
 				0BC9B9A4255048850068689A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				0B137F5D25505F070007C49F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0B137F60255061A20007C49F /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				0B137F6B2550681C0007C49F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0BAB02EC25D2C50400D1B1C0 /* XCRemoteSwiftPackageReference "Core" */,
 			);
 			productRefGroup = 0BDD147225503CBC002714DD /* Products */;
 			projectDirPath = "";
@@ -777,28 +765,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0B137F5D25505F070007C49F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
-			};
-		};
-		0B137F60255061A20007C49F /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.1.1;
-			};
-		};
 		0B137F6B2550681C0007C49F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.1.1;
+			};
+		};
+		0BAB02EC25D2C50400D1B1C0 /* XCRemoteSwiftPackageReference "Core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JuniaFirdaus/Core.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		0BC9B9A4255048850068689A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
@@ -812,21 +792,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0B137F5E25505F070007C49F /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0B137F5D25505F070007C49F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		0B137F61255061A20007C49F /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0B137F60255061A20007C49F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = Realm;
-		};
-		0B137F63255061A20007C49F /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0B137F60255061A20007C49F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
 		0B137F6C2550681D0007C49F /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B137F6B2550681C0007C49F /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -837,13 +802,14 @@
 			package = 0B137F6B2550681C0007C49F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		0B3104AD25789A9B00AA5BC4 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
 		0B3104AF25789AA100AA5BC4 /* Category */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Category;
+		};
+		0BAB02ED25D2C50400D1B1C0 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BAB02EC25D2C50400D1B1C0 /* XCRemoteSwiftPackageReference "Core" */;
+			productName = Core;
 		};
 		0BC9B9A5255048850068689A /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

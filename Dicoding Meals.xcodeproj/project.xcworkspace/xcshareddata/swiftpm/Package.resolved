@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
           "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
@@ -11,8 +11,17 @@
         }
       },
       {
+        "package": "Core",
+        "repositoryURL": "https://github.com/JuniaFirdaus/Core.git",
+        "state": {
+          "branch": null,
+          "revision": "8de60c729ebe9e8dd68552f14f9a19bc2346c4c6",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "Realm",
-        "repositoryURL": "https://github.com/realm/realm-cocoa",
+        "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
           "branch": null,
           "revision": "a4c647a5b2705591bf9472aed46786d00b71ea2b",
