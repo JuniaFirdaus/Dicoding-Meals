@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode11.5 
+osx_image: xcode12.3 
 xcode_project: Dicoding Meals.xcodeproj 
 xcode_scheme: Dicoding Meals
-xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 12
+xcode_destination: platform=iOS Simulator,OS=14.3,name=iPhone 12
