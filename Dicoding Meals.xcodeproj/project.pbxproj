@@ -22,6 +22,7 @@
 		0B3104B025789AA100AA5BC4 /* Category in Frameworks */ = {isa = PBXBuildFile; productRef = 0B3104AF25789AA100AA5BC4 /* Category */; };
 		0B3F08DC255AED3F006E4173 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F08DB255AED3F006E4173 /* AboutView.swift */; };
 		0B3F08DE255AF053006E4173 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F08DD255AF053006E4173 /* CircleImage.swift */; };
+		0B545DB725D7AFD5001F3457 /* Dicoding_MealsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B545DB625D7AFD5001F3457 /* Dicoding_MealsTests.swift */; };
 		0BAB02EE25D2C50400D1B1C0 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAB02ED25D2C50400D1B1C0 /* Core */; };
 		0BB02D8125D2C9C600E6D281 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB02D8025D2C9C600E6D281 /* Alamofire */; };
 		0BC9B960255040BA0068689A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC9B95F255040BA0068689A /* Preview Assets.xcassets */; };
@@ -54,6 +55,16 @@
 		0BF452BF25BBDA7800CE5212 /* Meal in Frameworks */ = {isa = PBXBuildFile; productRef = 0BF452BE25BBDA7800CE5212 /* Meal */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B545DB925D7AFD5001F3457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDD146925503CBC002714DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDD147025503CBC002714DD;
+			remoteInfo = "Dicoding Meals";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0B053D472577774B0089250D /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		0B053D49257777690089250D /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
@@ -68,6 +79,9 @@
 		0B3104AB2578968E00AA5BC4 /* Category */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Category; path = Modules/Category; sourceTree = "<group>"; };
 		0B3F08DB255AED3F006E4173 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0B3F08DD255AF053006E4173 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		0B545DB425D7AFD5001F3457 /* Dicoding MealsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dicoding MealsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B545DB625D7AFD5001F3457 /* Dicoding_MealsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dicoding_MealsTests.swift; sourceTree = "<group>"; };
+		0B545DB825D7AFD5001F3457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B712BCF25B7D75300F8A124 /* Meal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Meal; path = Modules/Meal; sourceTree = "<group>"; };
 		0BC9B95F255040BA0068689A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BC9B96D255041DA0068689A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
@@ -100,6 +114,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B545DB125D7AFD5001F3457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BDD146E25503CBC002714DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +248,15 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		0B545DB525D7AFD5001F3457 /* Dicoding MealsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B545DB625D7AFD5001F3457 /* Dicoding_MealsTests.swift */,
+				0B545DB825D7AFD5001F3457 /* Info.plist */,
+			);
+			path = "Dicoding MealsTests";
+			sourceTree = "<group>";
+		};
 		0BC9B9612550410A0068689A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +349,7 @@
 				0B712BCF25B7D75300F8A124 /* Meal */,
 				0B3104AB2578968E00AA5BC4 /* Category */,
 				0BDD147325503CBC002714DD /* Dicoding Meals */,
+				0B545DB525D7AFD5001F3457 /* Dicoding MealsTests */,
 				0BDD147225503CBC002714DD /* Products */,
 				0B3104AC25789A9B00AA5BC4 /* Frameworks */,
 			);
@@ -328,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDD147125503CBC002714DD /* Dicoding Meals.app */,
+				0B545DB425D7AFD5001F3457 /* Dicoding MealsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -432,6 +464,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B545DB325D7AFD5001F3457 /* Dicoding MealsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B545DBB25D7AFD5001F3457 /* Build configuration list for PBXNativeTarget "Dicoding MealsTests" */;
+			buildPhases = (
+				0B545DB025D7AFD5001F3457 /* Sources */,
+				0B545DB125D7AFD5001F3457 /* Frameworks */,
+				0B545DB225D7AFD5001F3457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B545DBA25D7AFD5001F3457 /* PBXTargetDependency */,
+			);
+			name = "Dicoding MealsTests";
+			productName = "Dicoding MealsTests";
+			productReference = 0B545DB425D7AFD5001F3457 /* Dicoding MealsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0BDD147025503CBC002714DD /* Dicoding Meals */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BDD148525503CC1002714DD /* Build configuration list for PBXNativeTarget "Dicoding Meals" */;
@@ -465,10 +515,14 @@
 		0BDD146925503CBC002714DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = JFS;
 				TargetAttributes = {
+					0B545DB325D7AFD5001F3457 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0BDD147025503CBC002714DD;
+					};
 					0BDD147025503CBC002714DD = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -494,11 +548,19 @@
 			projectRoot = "";
 			targets = (
 				0BDD147025503CBC002714DD /* Dicoding Meals */,
+				0B545DB325D7AFD5001F3457 /* Dicoding MealsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B545DB225D7AFD5001F3457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BDD146F25503CBC002714DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,6 +596,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B545DB025D7AFD5001F3457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B545DB725D7AFD5001F3457 /* Dicoding_MealsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BDD146D25503CBC002714DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,6 +647,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0B545DBA25D7AFD5001F3457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDD147025503CBC002714DD /* Dicoding Meals */;
+			targetProxy = 0B545DB925D7AFD5001F3457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		0BDD147F25503CC1002714DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -589,6 +667,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B545DBC25D7AFD5001F3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dicoding MealsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juniafirdaus.Dicoding-Meals.Dicoding-MealsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dicoding Meals.app/Dicoding Meals";
+			};
+			name = Debug;
+		};
+		0B545DBD25D7AFD5001F3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dicoding MealsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juniafirdaus.Dicoding-Meals.Dicoding-MealsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dicoding Meals.app/Dicoding Meals";
+			};
+			name = Release;
+		};
 		0BDD148325503CC1002714DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -752,6 +868,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B545DBB25D7AFD5001F3457 /* Build configuration list for PBXNativeTarget "Dicoding MealsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B545DBC25D7AFD5001F3457 /* Debug */,
+				0B545DBD25D7AFD5001F3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0BDD146C25503CBC002714DD /* Build configuration list for PBXProject "Dicoding Meals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
