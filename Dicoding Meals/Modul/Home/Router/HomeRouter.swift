@@ -28,6 +28,4 @@ class HomeRouter {
         
         return DetailView(presenter: presenter)
     }
-    
 }
-

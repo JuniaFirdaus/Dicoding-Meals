@@ -19,7 +19,7 @@ where
     Transformer.Response == MealResponse,
     Transformer.Entity == MealModulEntity,
     Transformer.Domain == MealDomainModel {
-    
+        
     public typealias Request = Any
     public typealias Response = MealDomainModel
     
@@ -40,19 +40,19 @@ where
     public func getMeals(
         by category: Any?
     ) -> AnyPublisher<[MealDomainModel], Error> {
-        return self._localeDataSource.getMeals(by: category as! String)
+        return self._localeDataSource.getMeals(by: category as? String ?? "")
             .flatMap { result -> AnyPublisher<[MealDomainModel], Error> in
                 if result.isEmpty {
-                    return self._remoteDataSource.getMeals(by: category as! String)
-                        .map { self._mapper.transformMealResponsesToEntities(by: category as! String, input: $0)}
-                        .catch { _ in self._localeDataSource.getMeals(by: category as! String)}
-                        .flatMap { self._localeDataSource.addMeals(by: category as! String, from: $0)}
+                    return self._remoteDataSource.getMeals(by: category as? String ?? "")
+                        .map { self._mapper.transformMealResponsesToEntities(by: category as? String  ?? "", input: $0)}
+                        .catch { _ in self._localeDataSource.getMeals(by: category as? String ?? "")}
+                        .flatMap { self._localeDataSource.addMeals(by: category as? String ?? "", from: $0)}
                         .filter { $0 }
-                        .flatMap { _ in self._localeDataSource.getMeals(by: category as! String)
+                        .flatMap { _ in self._localeDataSource.getMeals(by: category as? String ?? "")
                             .map {  _mapper.transformMealEntitiesToDomains(input: $0)}
                         }.eraseToAnyPublisher()
                 } else {
-                    return self._localeDataSource.getMeals(by: category as! String)
+                    return self._localeDataSource.getMeals(by: category as? String ?? "")
                         .map { _mapper.transformMealEntitiesToDomains(input: $0)}
                         .eraseToAnyPublisher()
                 }

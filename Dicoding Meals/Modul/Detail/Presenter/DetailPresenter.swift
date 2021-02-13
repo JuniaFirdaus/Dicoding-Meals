@@ -12,17 +12,18 @@ import Meal
 import Core
 import Category
 
-class DetailPresenter<Request, Response, Interactor: UseCaseDetail>: ObservableObject where Interactor.Request == Request, Interactor.Response == Response{
+class DetailPresenter<Request,
+                      Response,
+                      Interactor: UseCaseDetail
+>: ObservableObject where Interactor.Request == Request,
+                          Interactor.Response == Response {
     
     private var cancellables: Set<AnyCancellable> = []
     private let router = DetailRouter()
     private let _useCase: Interactor
     
     var title = ""
-    //Meal
     @Published var meals: [Response] = []
-    
-    //Category
     @Published var category: CategoryDomainModel
     @Published var errorMessage: String = ""
     @Published var isLoading: Bool = false

@@ -11,7 +11,11 @@ import Combine
 import Core
 import Meal
 
-class FavoritePresenter<Request, Response, Interactor: UseCaseFavorite>: ObservableObject where Interactor.Request == Request, Interactor.Response == Response {
+class FavoritePresenter<Request,
+                        Response,
+                        Interactor: UseCaseFavorite
+>: ObservableObject where Interactor.Request == Request,
+                          Interactor.Response == Response {
     
     private var cancellables: Set<AnyCancellable> = []
     private let router = FavoriteRouter()

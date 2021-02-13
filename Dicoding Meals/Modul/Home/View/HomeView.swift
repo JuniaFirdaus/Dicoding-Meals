@@ -60,14 +60,14 @@ extension HomeView {
     
     var errorIndicator: some View {
         CustomEmptyView(
-            image: "assetSearchNotFound",
+            image: "ic_no_data_found",
             title: presenter.errorMessage
         ).offset(y: 80)
     }
     
     var emptyCategories: some View {
         CustomEmptyView(
-            image: "assetNoFavorite",
+            image: "ic_no_data_found",
             title: "The meal category is empty"
         ).offset(y: 80)
     }
@@ -83,8 +83,7 @@ extension HomeView {
                         CategoryRow(category: category)
                     }.buttonStyle(PlainButtonStyle())
                 }.padding(8)
-                
-                
+                                
             }
         }
     }

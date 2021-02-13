@@ -15,7 +15,9 @@ public struct IngredientTransFormer: IngredientMapper {
     
     public init() {}
     
-    public static func transformIngredientEntitiesToDomains(input ingredientEntities: [IngredientModulEntity]) -> [IngredientDomainModel] {
+    public static func transformIngredientEntitiesToDomains(
+        input ingredientEntities: [IngredientModulEntity]
+    ) -> [IngredientDomainModel] {
         return ingredientEntities.map { result in
             return IngredientDomainModel(
                 id: result.id,
@@ -25,7 +27,10 @@ public struct IngredientTransFormer: IngredientMapper {
         }
     }
     
-    public static func transformIngredientResponseToEntities(by idMeal: String, input mealResponse: MealResponse) -> [IngredientModulEntity] {
+    public static func transformIngredientResponseToEntities(
+        by idMeal: String,
+        input mealResponse: MealResponse
+    ) -> [IngredientModulEntity] {
         var ingredientEntities = [IngredientModulEntity]()
         var ingredients = [
             mealResponse.ingredient1, mealResponse.ingredient2,
@@ -69,7 +74,10 @@ public struct IngredientTransFormer: IngredientMapper {
         return ingredientEntities
     }
     
-    public static func transformIngredientResponseToDomains(by idMeal: String, input mealResponse: MealResponse) -> [IngredientDomainModel] {
+    public static func transformIngredientResponseToDomains(
+        by idMeal: String,
+        input mealResponse: MealResponse
+    ) -> [IngredientDomainModel] {
         var ingredientDomains: [IngredientDomainModel] = []
         var ingredients = [
             mealResponse.ingredient1, mealResponse.ingredient2,

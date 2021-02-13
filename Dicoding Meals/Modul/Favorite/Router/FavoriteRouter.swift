@@ -13,7 +13,7 @@ import Core
 class FavoriteRouter {
     
     func makeMealView(for meal: MealDomainModel) -> some View {
-        let mealUseCase : InteractorMeal<
+        let mealUseCase: InteractorMeal<
             Any,
             MealDomainModel,
             GetMealsRepository<

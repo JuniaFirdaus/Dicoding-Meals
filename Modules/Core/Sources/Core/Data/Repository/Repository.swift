@@ -20,7 +20,6 @@ public protocol MealRepository {
     func updateFavoriteMeal(by idMeal: Request?) -> AnyPublisher<Response, Error>
 }
 
-
 public protocol CategoryRepository {
     associatedtype Request
     associatedtype Response

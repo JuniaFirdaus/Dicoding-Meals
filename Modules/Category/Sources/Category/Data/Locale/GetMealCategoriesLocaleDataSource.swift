@@ -10,15 +10,13 @@ import Meal
 import Combine
 import RealmSwift
 
-import Foundation
-
 public struct GetMealCategoriesLocaleDataSource: LocaleMealCategoryDataSource {
     
     public typealias Request = Any
     public typealias Response = CategoryModuleEntity
     public typealias Entity = MealModulEntity
     
-    private let _realm: Realm!
+    private let _realm: Realm?
     
     public init(realm: Realm) {
         _realm = realm

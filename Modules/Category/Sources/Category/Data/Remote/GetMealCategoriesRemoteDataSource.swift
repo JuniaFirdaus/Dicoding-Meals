@@ -11,7 +11,7 @@ import Combine
 import Alamofire
 import Foundation
 
-public struct GetMealCategoriesRemoteDataSource : CategoryMealSource {
+public struct GetMealCategoriesRemoteDataSource: CategoryMealSource {
     
     public typealias Request = Any
     

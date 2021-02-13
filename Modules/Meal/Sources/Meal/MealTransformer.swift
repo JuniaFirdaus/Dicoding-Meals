@@ -16,7 +16,10 @@ public struct MealTransformer: MapperMeal {
     
     public init() {}
     
-    public func transformMealResponsesToEntities(by category: String, input mealResponses: [MealResponse]) -> [MealModulEntity] {
+    public func transformMealResponsesToEntities(
+        by category: String,
+        input mealResponses: [MealResponse]
+    ) -> [MealModulEntity] {
         return mealResponses.map { result in
             let newMeal = MealModulEntity()
             newMeal.id = result.id ?? ""
@@ -27,7 +30,10 @@ public struct MealTransformer: MapperMeal {
         }
     }
     
-    public func transformMealResponsesToDomains(by category: String, input mealResponses: [MealResponse]) -> [MealDomainModel] {
+    public func transformMealResponsesToDomains(
+        by category: String,
+        input mealResponses: [MealResponse]
+    ) -> [MealDomainModel] {
         return mealResponses.map { result in
             var newMeal = MealDomainModel(
                 id: result.id ?? "",
@@ -39,7 +45,9 @@ public struct MealTransformer: MapperMeal {
         }
     }
     
-    public func transformMealResponsesToDomains(input mealResponses: [MealResponse]) -> [MealDomainModel] {
+    public func transformMealResponsesToDomains(
+        input mealResponses: [MealResponse]
+    ) -> [MealDomainModel] {
         return mealResponses.map { result in
             let ingredients = IngredientTransFormer.transformIngredientResponseToDomains(
                 by: result.id ?? "",
@@ -60,7 +68,9 @@ public struct MealTransformer: MapperMeal {
         }
     }
     
-    public func transformMealEntitiesToDomains(input mealEntities: [MealModulEntity]) -> [MealDomainModel] {
+    public func transformMealEntitiesToDomains(
+        input mealEntities: [MealModulEntity]
+    ) -> [MealDomainModel] {
         return mealEntities.map { result in
             let ingredients = IngredientTransFormer.transformIngredientEntitiesToDomains(
                 input: Array(result.ingredients)
@@ -81,7 +91,9 @@ public struct MealTransformer: MapperMeal {
         }
     }
     
-    public func transformDetailMealEntityToDomain(input mealEntity: MealModulEntity) -> MealDomainModel {
+    public func transformDetailMealEntityToDomain(
+        input mealEntity: MealModulEntity
+    ) -> MealDomainModel {
         let ingredients = IngredientTransFormer.transformIngredientEntitiesToDomains(
             input: Array(mealEntity.ingredients)
         )
@@ -100,7 +112,9 @@ public struct MealTransformer: MapperMeal {
         )
     }
     
-    public func transformDetailMealEntityToDomains(input mealEntities: [MealModulEntity]) -> [MealDomainModel] {
+    public func transformDetailMealEntityToDomains(
+        input mealEntities: [MealModulEntity]
+    ) -> [MealDomainModel] {
         return mealEntities.map { result in
             let ingredients = IngredientTransFormer.transformIngredientEntitiesToDomains(
                 input: Array(result.ingredients)
@@ -121,7 +135,10 @@ public struct MealTransformer: MapperMeal {
         }
     }
     
-    public func transformDetailMealResponseToEntity(by idMeal: String, input mealResponse: MealResponse) -> MealModulEntity {
+    public func transformDetailMealResponseToEntity(
+        by idMeal: String,
+        input mealResponse: MealResponse
+    ) -> MealModulEntity {
         let ingredients = IngredientTransFormer.transformIngredientResponseToEntities(
             by: idMeal,
             input: mealResponse
@@ -140,7 +157,9 @@ public struct MealTransformer: MapperMeal {
         return mealEntity
     }
     
-    public func transformDetailMealResponseToEntity(input mealResponse: [MealResponse]) -> [MealModulEntity] {
+    public func transformDetailMealResponseToEntity(
+        input mealResponse: [MealResponse]
+    ) -> [MealModulEntity] {
         return mealResponse.map { result in
             let ingredients = IngredientTransFormer.transformIngredientResponseToEntities(
                 by: result.id ?? "",

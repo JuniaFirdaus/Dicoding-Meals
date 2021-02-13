@@ -11,7 +11,11 @@ import Combine
 import Core
 import Category
 
-class HomePresenter<Request, Response, Interactor: UseCaseHome>: ObservableObject where Interactor.Request == Request, Interactor.Response == [Response] {
+class HomePresenter<Request,
+                    Response,
+                    Interactor: UseCaseHome
+>: ObservableObject where Interactor.Request == Request,
+                          Interactor.Response == [Response] {
     
     private var cancellables: Set<AnyCancellable> = []
     private let router = HomeRouter()

@@ -43,8 +43,7 @@ public protocol MapperMeal {
         by category: String,
         input mealResponses: [Response]
     ) -> [Entity]
-    
-    
+        
     func transformMealResponsesToDomains(
         by category: String,
         input mealResponses: [Response]

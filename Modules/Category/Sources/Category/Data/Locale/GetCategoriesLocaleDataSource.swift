@@ -17,7 +17,7 @@ public struct GetCategoriesLocaleDataSource: LocaleDataSource {
     public typealias Response = CategoryModuleEntity
     public typealias Entity = MealModulEntity
     
-    private let _realm: Realm!
+    private let _realm: Realm?
     
     public init(realm: Realm) {
         _realm = realm
@@ -26,9 +26,9 @@ public struct GetCategoriesLocaleDataSource: LocaleDataSource {
     public func add(entities: [CategoryModuleEntity]) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { completion in
             do {
-                try self._realm.write {
+                try self._realm?.write {
                     for category in entities {
-                        self._realm.add(category, update: .all)
+                        self._realm?.add(category, update: .all)
                     }
                     completion(.success(true))
                 }
@@ -52,7 +52,6 @@ public struct GetCategoriesLocaleDataSource: LocaleDataSource {
             }
         }.eraseToAnyPublisher()
     }
-    
     
     public func get(id: String) -> AnyPublisher<CategoryModuleEntity, Error> {
         fatalError()

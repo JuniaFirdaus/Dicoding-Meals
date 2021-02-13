@@ -27,6 +27,4 @@ where R.Request == Request, R.Response == Response {
     public func getMeals(request: Request) -> AnyPublisher<[Response], Error> {
         _repository.getMeals(by: request)
     }
-    
-    
 }

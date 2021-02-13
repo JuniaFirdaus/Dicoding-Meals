@@ -9,13 +9,12 @@ import Foundation
 import Core
 import Combine
 import RealmSwift
-import Foundation
 
 public struct GetMealsLocaleDataSource: LocaleMealDataSource {
     
     public typealias Request = Any
     public typealias Response = MealModulEntity
-    private let _realm: Realm!
+    private let _realm: Realm?
     
     public init(realm: Realm) {
         _realm = realm

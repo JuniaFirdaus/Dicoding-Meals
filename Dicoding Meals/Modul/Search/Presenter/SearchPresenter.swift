@@ -11,7 +11,11 @@ import Combine
 import Core
 import Meal
 
-class SearchPresenter<Request, Response, Interactor: UseCaseSearch>: ObservableObject where Interactor.Request == Request, Interactor.Response == Response {
+class SearchPresenter<Request,
+                      Response,
+                      Interactor: UseCaseSearch
+>: ObservableObject where Interactor.Request == Request,
+                          Interactor.Response == Response {
     
     private var cancellables: Set<AnyCancellable> = []
     private let router = SearchRouter()

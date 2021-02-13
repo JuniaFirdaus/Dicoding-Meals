@@ -75,20 +75,20 @@ extension SearchView {
     
     var errorIndicator: some View {
         CustomEmptyView(
-            image: "assetSearchNotFound",
+            image: "ic_no_data_found",
             title: presenter.errorMessage
         ).offset(y: 80)
     }
     
     var emptyTitle: some View {
         CustomEmptyView(
-            image: "assetSearchMeal",
+            image: "ic_no_data_found",
             title: "Come on, find your favorite food!"
         ).offset(y: 50)
     }
     var emptyMeals: some View {
         CustomEmptyView(
-            image: "assetSearchNotFound",
+            image: "ic_no_data_found",
             title: "Data not found"
         ).offset(y: 80)
     }

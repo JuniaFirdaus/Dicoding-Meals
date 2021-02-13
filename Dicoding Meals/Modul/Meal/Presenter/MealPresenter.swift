@@ -11,7 +11,11 @@ import Combine
 import Core
 import Meal
 
-class MealPresenter<Request, Response, Interactor: UseCaseMeal>: ObservableObject where Interactor.Request == Request, Interactor.Response == Response {
+class MealPresenter<Request,
+                    Response,
+                    Interactor: UseCaseMeal
+>: ObservableObject where Interactor.Request == Request,
+                          Interactor.Response == Response {
     
     private var cancellables: Set<AnyCancellable> = []
     private let _useCase: Interactor

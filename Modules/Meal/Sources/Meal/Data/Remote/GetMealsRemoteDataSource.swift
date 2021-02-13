@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 import Foundation
 
-public struct GetMealsRemoteDataSource : MealDataSource {
+public struct GetMealsRemoteDataSource: MealDataSource {
     
     public typealias Request = Any
     

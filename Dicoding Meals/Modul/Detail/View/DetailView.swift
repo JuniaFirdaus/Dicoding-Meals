@@ -65,7 +65,7 @@ extension DetailView {
     
     var errorIndicator: some View {
         CustomEmptyView(
-            image: "assetSearchNotFound",
+            image: "ic_no_data_found",
             title: presenter.errorMessage
         ).offset(y: 80)
     }

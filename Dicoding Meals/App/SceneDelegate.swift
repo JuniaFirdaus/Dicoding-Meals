@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         
-        let favoriteUseCase : InteractorFavorite<
+        let favoriteUseCase: InteractorFavorite<
             Any, MealDomainModel,
             GetMealsRepository<
                 GetMealsLocaleDataSource,
@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 MealTransformer>
         > = Injection.init().provideFavorite()
         
-        let searchUseCase : InteractorSearch<
+        let searchUseCase: InteractorSearch<
             Any, MealDomainModel,
             GetMealsRepository<
                 GetMealsLocaleDataSource,
